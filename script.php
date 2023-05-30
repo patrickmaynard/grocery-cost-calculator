@@ -1,12 +1,15 @@
 <?php
 
-$inputText = file_get_contents('input.txt');
-
-$lines = explode("\n", $inputText);
-
-$output = ['s' => 0, 'p' => 0];
+// Why do this strange copy-and-paste dance? Well ...
+// It's frankly easier to type into a Google Drive word processing document on a phone 
+// than it is to try to type type into a tiny spreadsheet. 
+// At the grocery store post-checkout recombobulation shelf, this approach keeps us sane :-)
 
 const CURRENCY_STRING = ' EUR';
+
+$inputText = file_get_contents('input.txt');
+$lines = explode("\n", $inputText);
+$output = ['s' => 0, 'p' => 0];
 
 foreach ($lines as $line) {
     $pieces = explode('-', $line);
