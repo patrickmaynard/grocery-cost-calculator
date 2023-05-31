@@ -1,0 +1,2 @@
+# We don't ever want to commit the input.txt file to version control.
+input.txt
